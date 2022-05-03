@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;geckodriver.exe&apos; to &apos;Test_Folder__a&apos;&#x0D;&#x0A;- Original project: &apos;Projet_Olga&apos;&#x0D;&#x0A;- Destination element: &apos;Test_Folder__a&apos;&#x0D;&#x0A;- Original element: &apos;geckodriver.exe&apos;" description="Copy file" element1="src/main/resources/driver/geckodriver.exe" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1651136747614" target="/test10/src/test/resources/squash/Test_Folder__a" units="0" version="1.0"/>
+</session>

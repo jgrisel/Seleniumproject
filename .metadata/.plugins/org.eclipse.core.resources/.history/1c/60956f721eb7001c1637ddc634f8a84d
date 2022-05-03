@@ -1,0 +1,73 @@
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+
+public class TestClass2 {
+	
+	WebDriver driver;
+	WebDriverWait wait;
+
+	@Before
+
+	public void setup() throws Exception {
+
+		//Initialisation du driver
+		System.setProperty("webdriver.gecko.driver", "src/main/resources/driver/geckodriver.exe");
+		driver = new FirefoxDriver();
+		
+		//initialiser le fichier.properties
+		Properties propertyJDD = new Properties();
+	    propertyJDD.load(new FileInputStream("src/main/resources/JDD.properties/JDD.properties"));
+	    
+	    //aller sur le site du PROJET
+	    driver.get(propertyJDD.getProperty("URL"));
+	    driver.manage().window().maximize();
+
+	}
+
+	//@After
+
+	//public void teardown() {
+		//driver.quit();
+	//}
+
+	
+	@Test
+	public void test() throws Exception {
+		
+		wait = new WebDriverWait(driver, 15); // Explicit wait
+		
+		  //vérifier que la page est correcte
+	    //assertEquals("LibrePlan: accès utilisateur", driver.getTitle());
+	    
+	    //initialiser la PageConnexion
+	    PageConnexion page_connexion = PageFactory.initElements(driver, PageConnexion.class);
+	    
+	    Thread.sleep(2000);
+	    
+	    //se connecter à la page d'accueil
+	    page_connexion.logIn(driver, "admin", "admin");
+	    
+
+	    
+	    //Thread.sleep(2000);
+	    //accéder à la page de la liste des calendriers
+	   // PageListeCalendrier page_liste_calendrier = page_accueil.clicItemCalendrier(driver);
+	        
+	}
+
+}
+

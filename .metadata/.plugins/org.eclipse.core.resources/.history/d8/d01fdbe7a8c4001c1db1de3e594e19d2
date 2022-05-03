@@ -1,0 +1,6 @@
+
+public class Client {
+
+	int age;
+	boolean gambler;
+}

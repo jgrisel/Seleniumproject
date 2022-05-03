@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book>
+	<title titre="Le livre de la jungle"/>
+	<auteur nom="verne" prenom="jules"/>
+	<auteur nom="etrier" prenom="alex"/>
+		<section>
+			<title titre="Section 1"/>
+			<separateur />
+			<chapter>
+				<title titre="chapitre 1"/>
+				<pr>Moglie dans la jungle</pr>
+				<pr>Moglie avance seul</pr>
+			</chapter>
+			<separateur />
+			<chapter>
+				<title titre="chapitre 2"/>
+				<pr>Moglie dans la jungle 2</pr>
+				<pr>Moglie avance seul 2</pr>
+			</chapter>
+		</section>
+		<section>
+			<title>Section 2</title>
+			<separateur />
+			<chapter>
+				<title>chapitre 1</title>
+				<pr>Moglie dans la jungle 3</pr>
+				<pr>Moglie avance seul 3</pr>
+			</chapter>
+			<separateur />
+			<chapter>
+				<title>chapitre 2</title>
+				<pr>La panthère avance lentement</pr>
+				<pr>Seule dans le noir</pr>
+			</chapter>
+		</section>
+</book>

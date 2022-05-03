@@ -1,0 +1,12 @@
+package calculetteJava;
+
+import java.util.List;
+
+public class Calculette {
+
+
+	public int Somme(List<Integer> liste_nombre) {
+		int somme = nombre1+nombre2;
+		return somme;
+	}
+}

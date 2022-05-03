@@ -1,0 +1,15 @@
+
+public class Casino {
+	Boolean response;
+
+	public Boolean autorisation(Client client) {
+		if (client.age>17 && client.gambler == false) {
+			response = true ;
+	}
+		else {
+			response = false ;
+		
+	}
+		return response;
+	}
+}

@@ -1,0 +1,62 @@
+package JpetstoreJava;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class JpetstoreSteps {
+	
+	WebDriver driver;
+
+	@Given("J'ouvre mon navigateur Google")
+	public void j_ouvre_mon_navigateur_Google() {
+		driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		driver.get("https://www.google.fr");
+		driver.findElement(By.xpath("//div[contains(text(),\"J'accepte\")]")).click();
+	}
+
+	@Given("Je recherche JpetStore")
+	public void je_recherche_JpetStore() {
+		driver.findElement(By.xpath("//input[@title=\"Rechercher\"]")).click();
+		driver.findElement(By.xpath("//input[@class='gLFyf gsfi']")).sendKeys("JpetStore");
+		driver.findElement(By.xpath("//input[@class='gLFyf gsfi']")).sendKeys(Keys.ENTER);
+	}
+
+	@When("Je clique sur le site JpetStore")
+	public void je_clique_sur_le_site_JpetStore() throws InterruptedException {
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[@href=\"/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi2-sjh-a73AhUK36QKHRzXBtkQjBB6BAgEEAE&url=https%3A%2F%2Fpetstore.octoperf.com%2Factions%2FCatalog.action&usg=AOvVaw0VjPovJ7j1Y6orfzKBLLmR\"]")).click(); 
+	}
+
+	@When("Je clique sur le bouton Login")
+	public void je_clique_sur_le_bouton_Login() {
+
+	}
+
+	@When("Je saisis dans le champ username {string}")
+	public void je_saisis_dans_le_champ_username(String string) {
+
+	}
+
+	@When("Je saisis dans le champs password {string}")
+	public void je_saisis_dans_le_champs_password(String string) {
+
+	}
+
+	@Then("Je suis connecte")
+	public void je_suis_connecte() {
+	}
+
+	@Then("J'accede a la page accueil en tant que {string}")
+	public void j_accede_a_la_page_accueil_en_tant_que(String string) {
+	}
+
+}

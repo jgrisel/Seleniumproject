@@ -1,0 +1,29 @@
+package cucumberJava;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class footballSteps {
+
+	@Given("I have opened a browser")
+	public void i_have_opened_a_browser() {
+	    // Write code here that turns the phrase above into concrete actions
+	}
+
+	@Given("I search for floorball France")
+	public void i_search_for_floorball_France() {
+	    // Write code here that turns the phrase above into concrete actions
+	}
+
+	@When("I click on the French floorball federation website")
+	public void i_click_on_the_French_floorball_federation_website() {
+	    // Write code here that turns the phrase above into concrete actions
+	}
+
+	@Then("the menu ou pratiquer is clickable")
+	public void the_menu_o_pratiquer_is_clickable() {
+	    // Write code here that turns the phrase above into concrete actions
+	}
+
+}

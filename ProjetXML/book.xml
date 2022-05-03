@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book>
+	 <chapter>
+	 		<title>Introduction</title>
+	 </chapter>
+	 <chapter>
+	 	   <title>Récit</title>
+	 	   <subChapter>
+	 	   		 <title>Partie 1</title>
+	 	   </subChapter>
+	 	   <subChapter>
+	 	   	     <title>Partie 2</title>
+	 	   </subChapter>
+	 </chapter>
+	 <chapter>
+	 	   <title>Index</title>
+	 </chapter>
+</book>

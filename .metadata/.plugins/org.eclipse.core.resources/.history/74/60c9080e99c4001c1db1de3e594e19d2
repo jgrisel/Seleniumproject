@@ -1,0 +1,28 @@
+package achatJava;
+
+import java.util.Map;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class achatSteps {
+	private Map<String, Integer> listePrix;
+	private int totalSum;
+
+@Given("Le prix des produits de cette liste")
+public void le_prix_des_produits_de_cette_liste(io.cucumber.datatable.DataTable dataTable) {
+	public void le_prix_de_produit_de_cette_liste(Map<String, Integer> listePrix) {
+	 this.listePrix = listePrix; 
+}
+
+@When("Je commande {int} {string}")
+public void je_commande(Integer int1, String string) {
+
+}
+
+@Then("Je dois payer {int} euros")
+public void je_dois_payer_euros(Integer int1) {
+
+}
+}

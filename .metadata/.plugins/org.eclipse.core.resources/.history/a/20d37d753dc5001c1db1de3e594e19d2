@@ -1,0 +1,7 @@
+package calculetteJava;
+
+public class Calculette {
+	int nombre1;
+	
+
+}

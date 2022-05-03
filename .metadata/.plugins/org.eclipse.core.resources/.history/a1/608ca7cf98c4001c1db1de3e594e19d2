@@ -1,0 +1,23 @@
+package achatJava;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class achatSteps {
+
+@Given("Le prix des produits de cette liste")
+public void le_prix_des_produits_de_cette_liste(io.cucumber.datatable.DataTable dataTable) {
+  
+}
+
+@When("Je commande {int} {string}")
+public void je_commande(Integer int1, String string) {
+
+}
+
+@Then("Je dois payer {int} euros")
+public void je_dois_payer_euros(Integer int1) {
+
+}
+}

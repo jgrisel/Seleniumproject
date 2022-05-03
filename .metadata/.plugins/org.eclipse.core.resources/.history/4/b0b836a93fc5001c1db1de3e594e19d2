@@ -1,0 +1,11 @@
+package calculetteJava;
+
+public class Calculette {
+
+	
+	public int Nombre(int nombre1, int nombre2 ) {
+		nombre1=50;
+		nombre2=70;
+		return nombre1;	
+	}
+}

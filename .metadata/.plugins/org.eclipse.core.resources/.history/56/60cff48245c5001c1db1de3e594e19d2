@@ -1,0 +1,14 @@
+package calculetteJava;
+
+import java.util.List;
+
+public class Calculette {
+
+
+	public int Somme(List<Integer> liste_nombre) {
+		int sum = 0;
+		for (int i : liste_nombre)
+		    sum += liste_nombre.get(i);
+		return sum;
+	}
+}

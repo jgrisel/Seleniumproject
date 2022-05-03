@@ -1,0 +1,10 @@
+Feature: Se connecter à l'application JpetStore
+
+	Scenario: Je veux me connecter à l'application Jpestore
+		Given J'ouvre mon navigateur Google
+		And I search for floorball France
+		When I click on the French floorball federation website
+		Then the menu ou pratiquer is clickable
+
+
+

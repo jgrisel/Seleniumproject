@@ -1,0 +1,57 @@
+package JpetstoreJava;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class JpetstoreSteps {
+
+	@Given("J'ouvre mon navigateur Google")
+	public void j_ouvre_mon_navigateur_Google() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Given("Je recherche JpetStore")
+	public void je_recherche_JpetStore() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("Je clique sur le site JpetStore")
+	public void je_clique_sur_le_site_JpetStore() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("Je clique sur le bouton Login")
+	public void je_clique_sur_le_bouton_Login() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("Je saisis dans le champ username {string}")
+	public void je_saisis_dans_le_champ_username(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("Je saisis dans le champs password {string}")
+	public void je_saisis_dans_le_champs_password(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Je suis connecte")
+	public void je_suis_connecte() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("J'accede a la page accueil en tant que {string}")
+	public void j_accede_a_la_page_accueil_en_tant_que(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}
